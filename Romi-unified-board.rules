@@ -1,0 +1,103 @@
+
+(rules PCB Romi-unified-board
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 7)
+    (layer_rule F.Cu
+      (active off)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+  )
+  (rule
+    (width 127.0)
+    (clear 127.2)
+    (clear 0.0 (type smd_to_turn_gap))
+    (clear 31.8 (type smd_smd))
+  )
+  (padstack "Via[0-3]_457.2:254_um"
+    (shape
+      (circle F.Cu 457.2 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 457.2 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 457.2 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 457.2 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_457.2:254_um" "Via[0-3]_457.2:254_um" default
+  )
+  (via 
+    "Via[0-3]_457.2:254_um-kicad_default" "Via[0-3]_457.2:254_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_457.2:254_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_457.2:254_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +5V VBUS GND +BATT "Net-(TP2-Pad1)" "REG_VCC" "Net-(C7-Pad1)" "Net-(C7-Pad2)"
+    GPIO16 "Net-(D2-Pad1)" "Net-(D3-Pad2)" "Net-(D3-Pad1)" GPIO33 GPIO34 +3V3 EN
+    GPIO36 GPIO39 GPIO35 GPIO32 GPIO25 GPIO26 "Net-(J2-Pad11)" "Net-(J2-Pad12)"
+    "Net-(J2-Pad13)" GPIO13 "Net-(J2-Pad16)" "Net-(J2-Pad17)" "Net-(J2-Pad18)" GPIO23 GPIO22 GPIO14
+    GPIO15 GPIO27 GPIO12 "Net-(J5-Pad11)" GPIO21 GPIO17 GPIO1 GPIO19
+    GPIO3 GPIO18 GPIO5 GPIO4 GPIO0 GPIO2 "Net-(J6-Pad33)" "Net-(J6-Pad34)"
+    "Net-(J6-Pad35)" "Net-(J6-Pad36)" "Net-(J6-Pad37)" "Net-(J6-Pad38)" "Net-(J7-Pad2)" SDA "Net-(J10-Pad4)" "Net-(J10-Pad1)"
+    "ML-" ML+ MR+ "MR-" "Net-(R2-Pad1)" "Net-(R3-Pad1)" "Net-(R3-Pad2)" "Net-(U1-Pad8)"
+    "Net-(J6-Pad27)" "Net-(J6-Pad31)" "Net-(D4-Pad2)" "Net-(D4-Pad1)" "Net-(J5-Pad10)" "Net-(D8-Pad2)" "Net-(U9-Pad4)" "Net-(U9-Pad9)"
+    "Net-(U9-Pad10)" "Net-(U9-Pad11)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
