@@ -740,50 +740,50 @@ Text Notes 12250 5250 0    50   ~ 0
 ML+
 Text Notes 12250 5350 0    50   ~ 0
 ML-
-Text GLabel 4650 2050 2    50   Input ~ 0
-GPIO21
-Text GLabel 4650 2150 2    50   Input ~ 0
-GPIO17
-Text GLabel 4650 2250 2    50   Input ~ 0
-GPIO16
 Text GLabel 4650 2350 2    50   Input ~ 0
-GPIO19
+GPIO21
 Text GLabel 4650 2450 2    50   Input ~ 0
-GPIO18
+GPIO17
 Text GLabel 4650 2550 2    50   Input ~ 0
-GPIO5
+GPIO16
 Text GLabel 4650 2650 2    50   Input ~ 0
-GPIO4
+GPIO19
 Text GLabel 4650 2750 2    50   Input ~ 0
-GPIO36
+GPIO18
 Text GLabel 4650 2850 2    50   Input ~ 0
-GPIO39
+GPIO5
 Text GLabel 4650 2950 2    50   Input ~ 0
-GPIO34
+GPIO4
 Text GLabel 4650 3050 2    50   Input ~ 0
-GPIO25
+GPIO36
 Text GLabel 4650 3150 2    50   Input ~ 0
+GPIO39
+Text GLabel 4650 3250 2    50   Input ~ 0
+GPIO34
+Text GLabel 4650 3350 2    50   Input ~ 0
+GPIO25
+Text GLabel 4650 3450 2    50   Input ~ 0
 GPIO26
 $Comp
 L power:GND #PWR0110
 U 1 1 5EEB6068
-P 4950 3250
-F 0 "#PWR0110" H 4950 3000 50  0001 C CNN
-F 1 "GND" V 4955 3122 50  0000 R CNN
-F 2 "" H 4950 3250 50  0001 C CNN
-F 3 "" H 4950 3250 50  0001 C CNN
-	1    4950 3250
+P 4950 3550
+F 0 "#PWR0110" H 4950 3300 50  0001 C CNN
+F 1 "GND" V 4955 3422 50  0000 R CNN
+F 2 "" H 4950 3550 50  0001 C CNN
+F 3 "" H 4950 3550 50  0001 C CNN
+	1    4950 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5EEB70F6
-P 4950 3450
-F 0 "#PWR0111" H 4950 3300 50  0001 C CNN
-F 1 "+3.3V" V 4965 3578 50  0000 L CNN
-F 2 "" H 4950 3450 50  0001 C CNN
-F 3 "" H 4950 3450 50  0001 C CNN
-	1    4950 3450
+P 4950 3750
+F 0 "#PWR0111" H 4950 3600 50  0001 C CNN
+F 1 "+3.3V" V 4965 3878 50  0000 L CNN
+F 2 "" H 4950 3750 50  0001 C CNN
+F 3 "" H 4950 3750 50  0001 C CNN
+	1    4950 3750
 	0    1    1    0   
 $EndComp
 Text GLabel 2550 2050 0    50   Input ~ 0
@@ -834,12 +834,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 2850 2550 2850
 Wire Wire Line
-	4550 2050 4650 2050
-Wire Wire Line
-	4550 2150 4650 2150
-Wire Wire Line
-	4550 2250 4650 2250
-Wire Wire Line
 	4550 2350 4650 2350
 Wire Wire Line
 	4550 2450 4650 2450
@@ -858,9 +852,15 @@ Wire Wire Line
 Wire Wire Line
 	4550 3150 4650 3150
 Wire Wire Line
-	4950 3250 4550 3250
+	4550 3250 4650 3250
 Wire Wire Line
-	4550 3450 4950 3450
+	4550 3350 4650 3350
+Wire Wire Line
+	4550 3450 4650 3450
+Wire Wire Line
+	4950 3550 4550 3550
+Wire Wire Line
+	4550 3750 4950 3750
 $Comp
 L power:GND #PWR0113
 U 1 1 5EF5EACD
@@ -1057,17 +1057,6 @@ Wire Wire Line
 	6350 1200 6300 1200
 Wire Wire Line
 	6300 1300 6350 1300
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5EF4C315
-P 5200 3850
-F 0 "H1" H 5300 3896 50  0000 L CNN
-F 1 "MountingHole" H 5300 3805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 5200 3850 50  0001 C CNN
-F 3 "~" H 5200 3850 50  0001 C CNN
-	1    5200 3850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5EF4C5E3
@@ -1323,35 +1312,35 @@ Wire Wire Line
 NoConn ~ 1250 2750
 NoConn ~ 1250 2450
 NoConn ~ 2150 2550
-NoConn ~ 5050 2950
+NoConn ~ 5050 3250
 NoConn ~ 1250 2250
 NoConn ~ 1250 2300
-NoConn ~ 5050 2750
-NoConn ~ 5050 2850
+NoConn ~ 5050 3050
+NoConn ~ 5050 3150
 NoConn ~ 2150 2250
 NoConn ~ 2150 2350
 NoConn ~ 1250 2650
 NoConn ~ 1250 3150
 NoConn ~ 3550 3050
 NoConn ~ 3550 3150
-NoConn ~ 5050 2150
-NoConn ~ 5050 2250
+NoConn ~ 5050 2450
+NoConn ~ 5050 2550
 NoConn ~ 1250 3050
 NoConn ~ 1250 2950
 NoConn ~ 2150 2650
-NoConn ~ 5050 3150
-NoConn ~ 5050 2650
+NoConn ~ 5050 3450
+NoConn ~ 5050 2950
 NoConn ~ 2150 2850
 NoConn ~ 3550 3250
-NoConn ~ 5050 3050
+NoConn ~ 5050 3350
 NoConn ~ 2150 2750
 NoConn ~ 3550 3550
 NoConn ~ 2150 2450
 Text Notes 8650 2900 0    50   ~ 0
 Free: 23 22 21 19 18 5
-Text GLabel 3200 6550 0    50   Input ~ 0
+Text GLabel 3650 7050 2    50   Input ~ 0
 GPIO23
-Text GLabel 3800 6550 2    50   Input ~ 0
+Text GLabel 3650 7250 2    50   Input ~ 0
 GPIO21
 $Comp
 L power:+5V #PWR0131
@@ -1406,28 +1395,11 @@ Wire Wire Line
 	6000 -300 6100 -300
 Wire Wire Line
 	6000 -850 6000 -800
-$Comp
-L Jumper:Jumper_3_Bridged12 JP1
-U 1 1 5F229CDD
-P 3500 6550
-F 0 "JP1" H 3500 6754 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 3500 6663 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 3500 6550 50  0001 C CNN
-F 3 "~" H 3500 6550 50  0001 C CNN
-	1    3500 6550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3800 6550 3750 6550
-Wire Wire Line
-	3500 6700 3500 6750
-Wire Wire Line
-	3250 6550 3200 6550
 Text GLabel 6350 1000 2    50   Input ~ 0
 GPIO23
 Text GLabel 8000 1300 2    50   Input ~ 0
 SDA
-Text GLabel 3500 6400 1    50   Input ~ 0
+Text GLabel 3250 7150 0    50   Input ~ 0
 SDA
 $Comp
 L Device:C C2
@@ -2303,4 +2275,26 @@ Wire Wire Line
 	6400 2550 6400 2650
 Wire Wire Line
 	6400 2650 6300 2650
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EF4C315
+P 5550 4000
+F 0 "H1" H 5650 4046 50  0000 L CNN
+F 1 "MountingHole" H 5750 3900 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 5550 4000 50  0001 C CNN
+F 3 "~" H 5550 4000 50  0001 C CNN
+	1    5550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5F890447
+P 3450 7150
+F 0 "SW2" H 3450 7435 50  0000 C CNN
+F 1 "SW_SPDT" H 3450 7344 50  0000 C CNN
+F 2 "unified:CSS-1210TB" H 3450 7150 50  0001 C CNN
+F 3 "~" H 3450 7150 50  0001 C CNN
+	1    3450 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
