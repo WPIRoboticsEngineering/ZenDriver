@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name unified)(type KiCad)(uri ${KIPRJMOD}/fp_lib/unified.pretty)(options "")(descr ""))
+  (lib (name US8)(type Legacy)(uri ${KIPRJMOD}/fp_lib/US8.mod)(options "")(descr ""))
 )
