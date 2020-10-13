@@ -1031,12 +1031,12 @@ $EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 5EEAECD4
-P 6350 1500
-F 0 "#PWR0123" H 6350 1250 50  0001 C CNN
-F 1 "GND" V 6355 1372 50  0000 R CNN
-F 2 "" H 6350 1500 50  0001 C CNN
-F 3 "" H 6350 1500 50  0001 C CNN
-	1    6350 1500
+P 6350 1400
+F 0 "#PWR0123" H 6350 1150 50  0001 C CNN
+F 1 "GND" V 6355 1272 50  0000 R CNN
+F 2 "" H 6350 1400 50  0001 C CNN
+F 3 "" H 6350 1400 50  0001 C CNN
+	1    6350 1400
 	0    -1   -1   0   
 $EndComp
 Text GLabel 14250 2600 0    50   Input ~ 0
@@ -1499,19 +1499,6 @@ Wire Wire Line
 Connection ~ 14400 2600
 Text GLabel 16750 2800 0    50   Input ~ 0
 GPIO15
-$Comp
-L Connector:Conn_01x07_Female J8
-U 1 1 5F79F56E
-P 6100 1200
-F 0 "J8" H 5992 1685 50  0000 C CNN
-F 1 "SPI" H 5992 1594 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 6100 1200 50  0001 C CNN
-F 3 "~" H 6100 1200 50  0001 C CNN
-	1    6100 1200
-	-1   0    0    -1  
-$EndComp
-Text GLabel 6350 1400 2    50   Input ~ 0
-GPIO2
 Wire Wire Line
 	6350 1500 6300 1500
 Wire Wire Line
@@ -2295,6 +2282,17 @@ F 1 "SW_SPDT" H 3450 7344 50  0000 C CNN
 F 2 "unified:CSS-1210TB" H 3450 7150 50  0001 C CNN
 F 3 "~" H 3450 7150 50  0001 C CNN
 	1    3450 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J8
+U 1 1 5F879B4D
+P 6100 1100
+F 0 "J8" H 6208 1481 50  0000 C CNN
+F 1 "SPI" H 6208 1390 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6100 1100 50  0001 C CNN
+F 3 "~" H 6100 1100 50  0001 C CNN
+	1    6100 1100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
