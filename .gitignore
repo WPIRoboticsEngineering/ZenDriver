@@ -8,3 +8,7 @@ svg/Romi-unified-board-F_Cu.svg
 svg/Romi-unified-board-F_Mask.svg
 fp_lib/unified.pretty/.svg2*
 gerbers/*
+gerbers.zip
+.~lock.Romi-unified-board-bom.csv#
+_autosave-Romi-unified-board.kicad_pcb
+bom/ibom.html
