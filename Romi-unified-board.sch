@@ -1598,7 +1598,7 @@ F 1 "SiS415DNT" V 9352 -1100 50  0000 C CNN
 F 2 "Package_SO:Vishay_PowerPAK_1212-8_Single" H 9300 -1175 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/63684/sis415dnt.pdf" V 9100 -1100 50  0001 L CNN
 	1    9100 -1100
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Transistor_FET:SiS415DNT Q1
@@ -1710,7 +1710,7 @@ U 1 1 5F47BCD7
 P 7350 4900
 F 0 "U1" H 7350 5565 50  0000 C CNN
 F 1 "MP4423H" H 7350 5474 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.7x2.05mm" H 7050 4250 50  0001 C CNN
+F 2 "unified:MP4423H" H 7050 4250 50  0001 C CNN
 F 3 "" H 7050 4250 50  0001 C CNN
 	1    7350 4900
 	1    0    0    -1  
