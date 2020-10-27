@@ -1040,7 +1040,7 @@ F 3 "" H 6350 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 14250 2600 0    50   Input ~ 0
-GPIO15
+MOTOR_DISABLE
 Text GLabel 6350 1100 2    50   Input ~ 0
 GPIO19
 Text GLabel 6350 1200 2    50   Input ~ 0
@@ -1497,8 +1497,6 @@ Wire Wire Line
 Wire Wire Line
 	14400 2500 14400 2600
 Connection ~ 14400 2600
-Text GLabel 16750 2800 0    50   Input ~ 0
-GPIO15
 Wire Wire Line
 	6350 1500 6300 1500
 Wire Wire Line
@@ -1914,8 +1912,6 @@ Wire Wire Line
 	9300 -1200 9750 -1200
 Text Notes 17100 150  0    50   ~ 0
 DNP U5,U6,U7,U4
-Text GLabel 18900 2500 0    50   Input ~ 0
-GPIO15
 $Comp
 L Device:LED D8
 U 1 1 5F68EAD9
@@ -2295,4 +2291,34 @@ F 3 "~" H 6100 1100 50  0001 C CNN
 	1    6100 1100
 	1    0    0    -1  
 $EndComp
+Text GLabel 16750 2800 0    50   Input ~ 0
+MOTOR_DISABLE
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5F9B53FD
+P 13550 1600
+F 0 "SW3" H 13550 1835 50  0000 C CNN
+F 1 "SW_SPST" H 13550 1744 50  0000 C CNN
+F 2 "unified:CSS-1210TB" H 13550 1600 50  0001 C CNN
+F 3 "~" H 13550 1600 50  0001 C CNN
+	1    13550 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 13750 1600 2    50   Input ~ 0
+MOTOR_DISABLE
+$Comp
+L power:GND #PWR0144
+U 1 1 5F9B5F0A
+P 13300 1600
+F 0 "#PWR0144" H 13300 1350 50  0001 C CNN
+F 1 "GND" H 13305 1427 50  0000 C CNN
+F 2 "" H 13300 1600 50  0001 C CNN
+F 3 "" H 13300 1600 50  0001 C CNN
+	1    13300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13350 1600 13300 1600
+Text GLabel 18900 2500 0    50   Input ~ 0
+MOTOR_DISABLE
 $EndSCHEMATC
