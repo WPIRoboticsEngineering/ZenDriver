@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name romi-unified-board)(type Legacy)(uri ${KIPRJMOD}/sch_lib/romi-unified-board.lib)(options "")(descr ""))
   (lib (name TC7WB66CFK)(type Legacy)(uri ${KIPRJMOD}/sch_lib/TC7WB66CFK.lib)(options "")(descr ""))
+  (lib (name LSM6DS33TR)(type Legacy)(uri ${KIPRJMOD}/sch_lib/LSM6DS33TR.lib)(options "")(descr ""))
 )
