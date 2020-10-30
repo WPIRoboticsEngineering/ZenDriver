@@ -887,9 +887,9 @@ Text GLabel 13200 3150 2    50   Input ~ 0
 GPIO27
 Text GLabel 13200 3050 2    50   Input ~ 0
 GPIO26
-Text GLabel 6100 -300 2    50   Input ~ 0
+Text GLabel 6300 -150 2    50   Input ~ 0
 GPIO17
-Text GLabel 5700 -150 2    50   Input ~ 0
+Text GLabel 5600 -300 2    50   Input ~ 0
 GPIO16
 Wire Wire Line
 	13200 2950 12650 2950
@@ -1356,45 +1356,45 @@ $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5F1ADAC2
-P 5800 -300
-F 0 "R1" V 5604 -300 50  0000 C CNN
-F 1 "10k" V 5695 -300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 -300 50  0001 C CNN
-F 3 "~" H 5800 -300 50  0001 C CNN
-	1    5800 -300
+P 6000 -150
+F 0 "R1" V 5804 -150 50  0000 C CNN
+F 1 "10k" V 5895 -150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 -150 50  0001 C CNN
+F 3 "~" H 6000 -150 50  0001 C CNN
+	1    6000 -150
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Zener D1
 U 1 1 5F1ECB50
-P 6000 -650
-F 0 "D1" V 6000 -571 50  0000 L CNN
-F 1 "D_Zener" V 6045 -571 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 6000 -650 50  0001 C CNN
-F 3 "~" H 6000 -650 50  0001 C CNN
-	1    6000 -650
+P 6200 -500
+F 0 "D1" V 6200 -421 50  0000 L CNN
+F 1 "D_Zener" V 6245 -421 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 6200 -500 50  0001 C CNN
+F 3 "~" H 6200 -500 50  0001 C CNN
+	1    6200 -500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0132
 U 1 1 5F1EDCD3
-P 6000 -850
-F 0 "#PWR0132" H 6000 -1100 50  0001 C CNN
-F 1 "GND" V 6005 -978 50  0000 R CNN
-F 2 "" H 6000 -850 50  0001 C CNN
-F 3 "" H 6000 -850 50  0001 C CNN
-	1    6000 -850
+P 6200 -700
+F 0 "#PWR0132" H 6200 -950 50  0001 C CNN
+F 1 "GND" V 6205 -828 50  0000 R CNN
+F 2 "" H 6200 -700 50  0001 C CNN
+F 3 "" H 6200 -700 50  0001 C CNN
+	1    6200 -700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 -300 6000 -300
+	6100 -150 6200 -150
 Wire Wire Line
-	6000 -500 6000 -300
-Connection ~ 6000 -300
+	6200 -350 6200 -150
+Connection ~ 6200 -150
 Wire Wire Line
-	6000 -300 6100 -300
+	6200 -150 6300 -150
 Wire Wire Line
-	6000 -850 6000 -800
+	6200 -700 6200 -650
 Text GLabel 6350 1000 2    50   Input ~ 0
 GPIO23
 Text GLabel 8000 1300 2    50   Input ~ 0
@@ -1418,13 +1418,9 @@ Wire Wire Line
 	5250 4850 5250 5600
 Connection ~ 5250 5600
 Wire Wire Line
-	5700 -300 5600 -300
-Wire Wire Line
 	5600 -300 5600 -250
 Wire Wire Line
 	5600 -250 5300 -250
-Wire Wire Line
-	5700 -150 5300 -150
 Wire Wire Line
 	12650 5000 13000 5000
 Wire Wire Line
@@ -2533,4 +2529,6 @@ Wire Wire Line
 	1750 3150 1700 3150
 Wire Wire Line
 	1750 3250 1700 3250
+Wire Wire Line
+	5300 -150 5900 -150
 $EndSCHEMATC
