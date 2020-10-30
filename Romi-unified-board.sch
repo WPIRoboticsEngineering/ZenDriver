@@ -887,9 +887,9 @@ Text GLabel 13200 3150 2    50   Input ~ 0
 GPIO27
 Text GLabel 13200 3050 2    50   Input ~ 0
 GPIO26
-Text GLabel 5700 -150 2    50   Input ~ 0
-GPIO17
 Text GLabel 6100 -300 2    50   Input ~ 0
+GPIO17
+Text GLabel 5700 -150 2    50   Input ~ 0
 GPIO16
 Wire Wire Line
 	13200 2950 12650 2950
