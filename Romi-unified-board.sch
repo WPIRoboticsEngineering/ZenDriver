@@ -719,9 +719,9 @@ $EndComp
 Text Notes 12250 3000 0    50   ~ 0
 GND
 Text Notes 12250 3100 0    50   ~ 0
-ELA
-Text Notes 12250 3200 0    50   ~ 0
 ELB
+Text Notes 12250 3200 0    50   ~ 0
+ELA\n
 Text Notes 12100 3300 0    50   ~ 0
 VCCENC
 Text Notes 12250 3400 0    50   ~ 0
@@ -731,9 +731,9 @@ ML-
 Text Notes 12250 4850 0    50   ~ 0
 GND
 Text Notes 12250 4950 0    50   ~ 0
-ELA
-Text Notes 12250 5050 0    50   ~ 0
 ELB
+Text Notes 12250 5050 0    50   ~ 0
+ELA
 Text Notes 12100 5150 0    50   ~ 0
 VCCENC
 Text Notes 12250 5250 0    50   ~ 0
@@ -895,13 +895,13 @@ Wire Wire Line
 	13200 2950 12650 2950
 Wire Wire Line
 	13150 4800 12650 4800
-Text GLabel 16750 3000 0    50   Input ~ 0
-GPIO12
-Text GLabel 16750 2900 0    50   Input ~ 0
-GPIO25
-Text GLabel 14700 2900 0    50   Input ~ 0
-GPIO4
 Text GLabel 14700 3000 0    50   Input ~ 0
+GPIO12
+Text GLabel 14700 2900 0    50   Input ~ 0
+GPIO25
+Text GLabel 16750 2900 0    50   Input ~ 0
+GPIO4
+Text GLabel 16750 3000 0    50   Input ~ 0
 GPIO13
 $Comp
 L Connector:Conn_01x04_Male J1
@@ -1129,17 +1129,6 @@ F 3 "" H 1300 3350 50  0001 C CNN
 $EndComp
 Text GLabel 1700 3450 0    50   Input ~ 0
 GPIO13
-$Comp
-L power:+5V #PWR0126
-U 1 1 5F04D5C5
-P 1350 3850
-F 0 "#PWR0126" H 1350 3700 50  0001 C CNN
-F 1 "+5V" V 1365 3978 50  0000 L CNN
-F 2 "" H 1350 3850 50  0001 C CNN
-F 3 "" H 1350 3850 50  0001 C CNN
-	1    1350 3850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1750 3850 1350 3850
 Wire Wire Line
@@ -1342,17 +1331,6 @@ Text GLabel 3650 7050 2    50   Input ~ 0
 GPIO23
 Text GLabel 3650 7250 2    50   Input ~ 0
 GPIO21
-$Comp
-L power:+5V #PWR0131
-U 1 1 5F1AA820
-P 5300 -350
-F 0 "#PWR0131" H 5300 -500 50  0001 C CNN
-F 1 "+5V" H 5315 -177 50  0000 C CNN
-F 2 "" H 5300 -350 50  0001 C CNN
-F 3 "" H 5300 -350 50  0001 C CNN
-	1    5300 -350
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5F1ADAC2
@@ -1890,7 +1868,7 @@ Wire Wire Line
 	2650 3150 2400 3150
 Wire Wire Line
 	2400 3150 2400 3450
-Text Notes 2500 4050 0    50   ~ 0
+Text Notes 2500 4300 0    50   ~ 0
 VUSB connects right to the plug.\nWe can't hook it up to 5v.\nWe drop the 5v by about a \nvolt and feed it into the BAT pin.
 NoConn ~ 2600 2950
 $Comp
@@ -2531,4 +2509,38 @@ Wire Wire Line
 	1750 3250 1700 3250
 Wire Wire Line
 	5300 -150 5900 -150
+$Comp
+L power:+5VL #PWR0126
+U 1 1 5F9F68D9
+P 5300 -350
+F 0 "#PWR0126" H 5300 -500 50  0001 C CNN
+F 1 "+5VL" V 5315 -222 50  0000 L CNN
+F 2 "" H 5300 -350 50  0001 C CNN
+F 3 "" H 5300 -350 50  0001 C CNN
+	1    5300 -350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5VL #PWR0131
+U 1 1 5F9F7789
+P 1350 3850
+F 0 "#PWR0131" H 1350 3700 50  0001 C CNN
+F 1 "+5VL" V 1365 3977 50  0000 L CNN
+F 2 "" H 1350 3850 50  0001 C CNN
+F 3 "" H 1350 3850 50  0001 C CNN
+	1    1350 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5VL #PWR0162
+U 1 1 5F9F99D1
+P 2400 3800
+F 0 "#PWR0162" H 2400 3650 50  0001 C CNN
+F 1 "+5VL" V 2415 3928 50  0000 L CNN
+F 2 "" H 2400 3800 50  0001 C CNN
+F 3 "" H 2400 3800 50  0001 C CNN
+	1    2400 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 2400 3800
 $EndSCHEMATC
