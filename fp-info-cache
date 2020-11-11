@@ -1,4 +1,4 @@
-18544078681080789
+18536059290858720
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80856,13 +80856,6 @@ transformer flyback
 0
 10
 10
-US8
-US8
-
-
-0
-8
-8
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -81634,47 +81627,26 @@ varistor SIOV
 2
 2
 unified
-CSS-1210TB
+DC-005-5A-2.0-SMT
 
 
 0
-5
-5
+0
+0
 unified
-JST_BM06B-GHS-TBT(LF)(SN)(N)
+FLASH_2x3_USON8
 
 
 0
-8
-8
+9
+9
 unified
-JST_SM02B-PASS-TBT(LF)(SN)
-
-
+QFN50P700X700X90-49N-D
+48 pin QFN MO-220
+Integrated Circuit
 0
-4
-4
-unified
-MP4423H
-
-
-0
-8
-8
-unified
-PQFN50P300X300X86-16N
-
-
-0
-16
-16
-unified
-Romi-unified-board-F_Cu
-
-
-0
-0
-0
+49
+49
 unified
 SK3296S01L1
 SK-3296S-01-L1-1
@@ -81682,10 +81654,3 @@ Connector
 0
 7
 7
-unified
-batterylug
-
-
-0
-1
-1

@@ -646,9 +646,9 @@ Wire Wire Line
 	4100 2850 4150 2850
 Wire Wire Line
 	4100 3450 4150 3450
-Text GLabel 15500 3200 2    50   Input ~ 0
-MR-
 Text GLabel 15500 2600 2    50   Input ~ 0
+MR-
+Text GLabel 15500 3200 2    50   Input ~ 0
 MR+
 $Comp
 L Connector:Conn_01x03_Male J4

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\AlexCamilo\Documents\GitHub\Romi-unified-board\Romi-unified-board.sch)
-    (date "11/1/2020 9:07:42 PM")
+    (date "11/10/2020 10:12:11 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -892,10 +892,10 @@
       (node (ref R15) (pin 1)))
     (net (code 5) (name MR+)
       (node (ref J13) (pin 5))
-      (node (ref U2) (pin 2)))
+      (node (ref U2) (pin 3)))
     (net (code 6) (name MR-)
       (node (ref J13) (pin 6))
-      (node (ref U2) (pin 3)))
+      (node (ref U2) (pin 2)))
     (net (code 7) (name ML+)
       (node (ref U3) (pin 2))
       (node (ref J12) (pin 5)))
