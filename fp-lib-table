@@ -1,4 +1,6 @@
 (fp_lib_table
   (lib (name unified)(type KiCad)(uri ${KIPRJMOD}/fp_lib/unified.pretty)(options "")(descr ""))
   (lib (name US8)(type Legacy)(uri ${KIPRJMOD}/fp_lib/US8.mod)(options "")(descr ""))
+  (lib (name jig)(type KiCad)(uri ${KIPRJMOD}/fp_lib/jig.pretty)(options "")(descr ""))
+  (lib (name Arduino)(type KiCad)(uri ${KIPRJMOD}/fp_lib/Arduino.pretty)(options "")(descr ""))
 )
