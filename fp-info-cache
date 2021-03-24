@@ -1,4 +1,4 @@
-19054966861497931
+19059812790898761
 Arduino
 Arduino_Due_Shield
 https://store.arduino.cc/arduino-due
@@ -76299,6 +76299,13 @@ rotary encoder
 0
 5
 4
+SS-12D06L5
+SS12D06L5
+SS-12D06L5-2
+Switch
+0
+3
+3
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -83040,6 +83047,13 @@ varistor SIOV
 0
 2
 2
+additional-artwork
+AuxHBridgeLabel
+
+
+0
+0
+0
 jig
 PinSocket_1x03_P2.54mm_Vertical
 Through hole straight socket strip, 1x03, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
@@ -83133,6 +83147,13 @@ PQFN50P300X300X86-16N
 16
 unified
 Romi-unified-board-F_Cu
+
+
+0
+0
+0
+unified
+Romi-unified-board-F_Cu-rev4
 
 
 0

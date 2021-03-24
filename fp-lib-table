@@ -3,4 +3,6 @@
   (lib (name US8)(type Legacy)(uri ${KIPRJMOD}/fp_lib/US8.mod)(options "")(descr ""))
   (lib (name jig)(type KiCad)(uri ${KIPRJMOD}/fp_lib/jig.pretty)(options "")(descr ""))
   (lib (name Arduino)(type KiCad)(uri ${KIPRJMOD}/fp_lib/Arduino.pretty)(options "")(descr ""))
+  (lib (name SS-12D06L5)(type KiCad)(uri ${KIPRJMOD}/fp_lib/SS-12D06L5.pretty)(options "")(descr ""))
+  (lib (name additional-artwork)(type KiCad)(uri ${KIPRJMOD}/fp_lib/additional-artwork.pretty)(options "")(descr ""))
 )
